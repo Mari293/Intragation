@@ -16,4 +16,4 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 @app.get("/saludo/{name}")
 async def say_hello(name:str):
-  return {"Esto es un saludo "}
+    return {"Esto es un saludo": {name} }
